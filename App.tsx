@@ -1,13 +1,15 @@
-import { StatusBar } from "expo-status-bar";
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function App() {
+const App: React.FC = () => {
+  const isActive = true;
+
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, isActive && styles.active]}>
       <Text style={styles.dummyText}>asdf</Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -23,4 +25,9 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "blue",
   },
+  active: {
+    backgroundColor: "lightgreen",
+  },
 });
+
+export default App;
