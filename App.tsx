@@ -1,11 +1,9 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const App: React.FC = () => {
-  const isActive = true;
-
+const App = () => {
   return (
-    <View style={[styles.container, isActive && styles.active]}>
+    <View style={[styles.container]}>
       <Text style={styles.dummyText}>asdf</Text>
     </View>
   );
