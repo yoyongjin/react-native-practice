@@ -18,3 +18,18 @@ const Container = styled.View`  flex: 1;
 
 const StyledText = styled.Text`  font-size: 20px;
   color: #333;`;
+
+react-native 코드가 android, ios native 코드로 변환돼서 렌더링이 되는데, 그때 style에서 차이가 난다. web browser마다 차이가 있듯.
+
+android, ios 둘 중 하나의 환경에서만 적용되는 style이 있을 경우 => {
+해당 컴포넌트를 모든 플랫폼의 환경에서 해당 style이 적용되는 컴포넌트로 감싼다.
+<Text /> -> <View><Text /></View>
+}
+
+scroll 여부는 우리가 react-native 한테 알려줘야한다.
+<ScrollView>안에 컴포넌트 작성</ScrollView>
+플랫폼별로 줄 수 있는 설정이 다르다 (공식문서 참고)
+
+<FlatList>: react-virtualize랑 비슷한 컴포넌트 prop은 <ScrollView>랑 거의 같다
+
+<Pressable>
