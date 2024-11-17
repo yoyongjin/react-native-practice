@@ -98,8 +98,5 @@ const fetchData = async () => {
 };
 ```
 
-### 요약
-
-- React Native 앱이 백엔드 서버로 HTTP 요청을 보낼 수 있는 이유는 **네이티브 네트워크 API를 JavaScript를 통해 활용**할 수 있기 때문입니다.
-- 네이티브 네트워크 스택을 활용하면서 브라우저 환경에서의 **CORS 제한도 없기 때문에**, 네트워크 요청을 더 자유롭게 처리할 수 있습니다.
-- React Native는 **JavaScript와 네이티브 코드 간의 브리지**를 통해 네트워크 요청뿐만 아니라 다양한 네이티브 기능을 활용할 수 있도록 설계되었습니다.
+react-native architecture
+legacy -> 현재 -> new architecture
