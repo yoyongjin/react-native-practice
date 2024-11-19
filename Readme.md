@@ -100,3 +100,9 @@ const fetchData = async () => {
 
 react-native architecture
 legacy -> 현재 -> new architecture
+
+반응형은 어디까지?
+
+플랫폼별 UI 차이
+
+디자인 시스템
